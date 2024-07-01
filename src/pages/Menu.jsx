@@ -51,7 +51,7 @@ function Menu(props) {
       //Upload Thumbnail
       const thumbUri = await upload({
         client: createThirdwebClient({
-          clientId: "<Enter your thirdweb client id>",
+          clientId: process.env.REACT_APP_THIRDWEB_CID,
         }),
         files: [collectionThumbFile],
       });
@@ -64,7 +64,7 @@ function Menu(props) {
       });
       const collectionUri = await upload({
         client: createThirdwebClient({
-          clientId: "<Enter your thirdweb client id>",
+          clientId: process.env.REACT_APP_THIRDWEB_CID,
         }),
         files: [new File([collectionMetaData], "collection.json")],
       });
@@ -97,7 +97,7 @@ function Menu(props) {
       });
       const collectionUri = await upload({
         client: createThirdwebClient({
-          clientId: "<Enter your thirdweb client id>",
+          clientId: process.env.REACT_APP_THIRDWEB_CID,
         }),
         files: [new File([collectionMetaData], "collection.json")],
       });
@@ -105,7 +105,7 @@ function Menu(props) {
       //Upload Token GLB
       const glbFileUri = await upload({
         client: createThirdwebClient({
-          clientId: "<Enter your thirdweb client id>",
+          clientId: process.env.REACT_APP_THIRDWEB_CID,
         }),
         files: [tokenGlbFile],
       });
@@ -113,7 +113,7 @@ function Menu(props) {
       //Upload Token Thumb
       const thumbUri = await upload({
         client: createThirdwebClient({
-          clientId: "<Enter your thirdweb client id>",
+          clientId: process.env.REACT_APP_THIRDWEB_CID,
         }),
         files: [tokenThumbFile],
       });
@@ -126,7 +126,7 @@ function Menu(props) {
       });
       const tokenUri = await upload({
         client: createThirdwebClient({
-          clientId: "<Enter your thirdweb client id>",
+          clientId: process.env.REACT_APP_THIRDWEB_CID,
         }),
         files: [new File([tokenMetaData], "token.json")],
       });
