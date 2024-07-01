@@ -51,7 +51,7 @@ function Menu(props) {
       //Upload Thumbnail
       const thumbUri = await upload({
         client: createThirdwebClient({
-          clientId: "142a28a23bca6a20e72f4b7148066494",
+          clientId: "<Enter your thirdweb client id>",
         }),
         files: [collectionThumbFile],
       });
@@ -64,7 +64,7 @@ function Menu(props) {
       });
       const collectionUri = await upload({
         client: createThirdwebClient({
-          clientId: "142a28a23bca6a20e72f4b7148066494",
+          clientId: "<Enter your thirdweb client id>",
         }),
         files: [new File([collectionMetaData], "collection.json")],
       });
@@ -97,7 +97,7 @@ function Menu(props) {
       });
       const collectionUri = await upload({
         client: createThirdwebClient({
-          clientId: "142a28a23bca6a20e72f4b7148066494",
+          clientId: "<Enter your thirdweb client id>",
         }),
         files: [new File([collectionMetaData], "collection.json")],
       });
@@ -105,7 +105,7 @@ function Menu(props) {
       //Upload Token GLB
       const glbFileUri = await upload({
         client: createThirdwebClient({
-          clientId: "142a28a23bca6a20e72f4b7148066494",
+          clientId: "<Enter your thirdweb client id>",
         }),
         files: [tokenGlbFile],
       });
@@ -113,7 +113,7 @@ function Menu(props) {
       //Upload Token Thumb
       const thumbUri = await upload({
         client: createThirdwebClient({
-          clientId: "142a28a23bca6a20e72f4b7148066494",
+          clientId: "<Enter your thirdweb client id>",
         }),
         files: [tokenThumbFile],
       });
@@ -126,7 +126,7 @@ function Menu(props) {
       });
       const tokenUri = await upload({
         client: createThirdwebClient({
-          clientId: "142a28a23bca6a20e72f4b7148066494",
+          clientId: "<Enter your thirdweb client id>",
         }),
         files: [new File([tokenMetaData], "token.json")],
       });
